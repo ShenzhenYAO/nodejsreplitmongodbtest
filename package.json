@@ -1,0 +1,19 @@
+{
+  "name": "nodejsreplitmongodbtest",
+  "version": "1.0.0",
+  "description": "testing Node.js Repl.it and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShenzhenYAO/nodejsreplitmongodbtest.git"
+  },
+  "author": "Shenzhen Yao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShenzhenYAO/nodejsreplitmongodbtest/issues"
+  },
+  "homepage": "https://github.com/ShenzhenYAO/nodejsreplitmongodbtest#readme"
+}
