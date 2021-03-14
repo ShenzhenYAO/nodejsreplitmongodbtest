@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/ShenzhenYAO/nodejsreplitmongodbtest/issues"
   },
-  "homepage": "https://github.com/ShenzhenYAO/nodejsreplitmongodbtest#readme"
+  "homepage": "https://github.com/ShenzhenYAO/nodejsreplitmongodbtest#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.15",
+    "pug": "^3.0.2"
+  }
 }
