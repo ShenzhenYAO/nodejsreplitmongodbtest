@@ -53,17 +53,20 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 //   });
 // })// client.connect()
 
-// // connect to mongoDB and update a record in the collection customers
-// client.connect(err => {
-//   if (err) throw err;
-//   let query = { 'userid': '002', 'treejson.name': 'what the' };
-//   let newvalues = { '$set': { 'treejson.segment': 1, 'name':'what the ...' } };
-//   client.db(dbName).collection(collectionName).updateOne(query, newvalues, function (err, result) {
-//     if (err) throw err;
-//     console.log("1 document updated");
-//     client.close();
-//   });
-// });
+// connect to mongoDB and update a record in the collection customers
+client.connect(err => {
+    if (err) throw err;
+    let query = { 'userid': '002', 'treejson.name': 'what the' };
+    let newvalues = {
+        '$set': { 'treejson.segment': 1, 'treejson.name': 'what the ...' },
+        '$unset': {'name':''}
+    };
+    client.db(dbName).collection(collectionName).updateOne(query, newvalues, function (err, result) {
+        if (err) throw err;
+        console.log("1 document updated");
+        client.close();
+    });
+});
 
 // // connect to mongoDB and delete a record in the collection customers
 // client.connect(err => {
